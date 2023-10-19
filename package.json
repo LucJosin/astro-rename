@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "yarn lint && yarn tsc && lightrix build 'src/**/*.ts'",
-    "prepare": "husky install",
+    "prepare": "husky install && yarn build",
     "tsc": "tsc --project ./",
     "lint": "eslint --fix \"**/*.{ts,tsx,js,cjs,mjs,jsx}\""
   },
