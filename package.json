@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "yarn lint && yarn tsc && lightrix build 'src/**/*.ts'",
-    "prepare": "yarn install && yarn build",
+    "prepack": "yarn build",
     "tsc": "tsc --project ./",
     "lint": "eslint --fix \"**/*.{ts,tsx,js,cjs,mjs,jsx}\""
   },
